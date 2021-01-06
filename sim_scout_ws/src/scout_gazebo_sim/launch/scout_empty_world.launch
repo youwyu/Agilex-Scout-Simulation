@@ -1,0 +1,22 @@
+<launch>
+
+    <arg name="robot_namespace" default="/"/>
+    <arg name="world_name" default="$(find scout_gazebo_sim)worlds/autoware.world"/>
+    <!-- <arg name="world_name" value="$(find rrt_exploration_tutorials)/launch/includes/worlds/largeMap.world"/> -->
+
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="world_name" value="$(arg world_name)"/>
+        <arg name="paused" value="false"/>
+        <arg name="use_sim_time" value="true"/>
+        <arg name="gui" value="true"/>
+        <arg name="headless" value="false"/>
+        <arg name="debug" value="false"/>
+    </include>
+
+    <include file="$(find scout_gazebo_sim)/launch/spawn_scout_v2.launch"></include>
+    
+    <!-- NO NEED IF USE CONTROLLER MANAGER -->
+    <!-- <node name="joint_state_publisher" pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" ></node> -->
+    
+    <!-- <node name="rviz" pkg="rviz" type="rviz" args="-d $(find scout_description)/rviz/navigation.rviz" /> -->
+</launch>

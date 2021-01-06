@@ -1,0 +1,8 @@
+prefix=/home/yyw/sim_scout_ws/devel
+
+Name: scout_description
+Description: Description of scout_description
+Version: 0.3.3
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
