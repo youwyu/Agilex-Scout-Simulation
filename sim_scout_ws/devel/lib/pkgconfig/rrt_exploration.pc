@@ -1,8 +1,0 @@
-prefix=/home/yyw/sim_scout_ws/devel
-
-Name: rrt_exploration
-Description: Description of rrt_exploration
-Version: 1.0.0
-Cflags: -I/home/yyw/sim_scout_ws/devel/include
-Libs: -L${prefix}/lib 
-Requires: roscpp nav_msgs tf visualization_msgs geometry_msgs message_runtime

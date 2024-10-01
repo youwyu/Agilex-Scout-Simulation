@@ -1,2 +1,0 @@
-/usr/bin/ar qc /home/yyw/sim_scout_ws/devel/lib/libscout_messenger.a  CMakeFiles/scout_messenger.dir/src/scout_messenger.cpp.o
-/usr/bin/ranlib /home/yyw/sim_scout_ws/devel/lib/libscout_messenger.a

@@ -1,8 +1,0 @@
-prefix=/home/yyw/sim_scout_ws/install
-
-Name: octomap_rviz_plugins
-Description: Description of octomap_rviz_plugins
-Version: 0.2.2
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib -loctomap_rviz_plugins
-Requires: octomap_msgs roscpp rviz
